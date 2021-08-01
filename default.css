@@ -3,11 +3,21 @@ html
 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     background-color: #fafafa;
+
+    /*
+    border: 1px solid #5e5;
+    */
 }
 
 figure
 {
-    width: 100%;
+    width: 98%;
+    /* Overflow hidden not working, ^ I had to do 98% to stop it from going off the page on 1920x1080 screen */
+    /* overflow: hidden; */
+
+    /*
+    border: 1px solid #ff0000;
+    */
 }
 
 img 
@@ -26,6 +36,10 @@ p
     /*font-size: 20px;*/
     font-size: 20px;
     font-family: 'Ubuntu', Verdana, Arial, Helvetica, sans-serif;
+
+    /*
+    border: 1px solid #0000ff;
+    */
 }
 
 h1
