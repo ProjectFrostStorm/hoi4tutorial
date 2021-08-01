@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOI4 Tutorial</title>
+
+        <!-- Google Fonts, adding in Lato 700 and Ubuntu 400 & 500 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="default.css"> <!-- CSS Sheet -->
+    </head>
+
+    <body>
+        <div>
+            <h1>Introduction to Hearts of Iron IV</h1>
+            <div id="author_subtext">By ProjectFrostStorm</div>
+            <!-- Project Started 2021-07-30 -->
+        </div>
+
+        <p>
+            Before we begin, HOI4 is a &lt;5GB, CPU heavy game and as such, can run on a wide variety of machines, including laptops (but do beware of heat up during gameplay).
+            However, do be aware that a slowdown is still to be expected towards the lategame due to the sheer number of units handled by both players and the AI.
+        </p>
+
+        <p>
+            <strong>Some images in this guide are full resolution 1920x1080 images scaled down to fit on screen. If something is difficult to read, feel free to open it in a new 
+            tab and use your browser's built-in zoom function!</strong>
+        </p>
+
+        <p>
+            Feel free to read this tutorial while playing along in the game, but it is not a requirement!
+        </p>
+
+        <h2>Table of Contents</h2>
+        <ul>
+            <li>
+                <a href="#Chapter_0_-_Initial_Setup">Chapter 0 - Initial Setup</a>
+            </li>
+            <li>
+                <a href="#Chapter_1_-_Beginner_Section">Chapter 1 - Beginner Section</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#1.0_-_General_Tips">1.0 - General Tips</a>
+                </li>
+                <li>
+                    <a href="#1.1_-_Basic_Country_Management">1.1 - Basic Country Management</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#1.1.1_-_National_Focus">1.1.1 - National Focus</a>
+                    </li>
+                    <li>
+                        <a href="#1.1.2_-_Research">1.1.2 - Research</a>
+                    </li>
+                    <li>
+                        <a href="#1.1.3_-_Construction">1.1.3 - Construction</a>
+                    </li>
+                    <li>
+                        <a href="#1.1.4_-_Production">1.1.4 - Production</a>
+                    </li>
+                    <li>
+                        <a href="#1.1.5_-_Government">1.1.5 - Government</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#1.2_-_Basic_Army_Management">1.2 - Basic Army Management</a>
+                </li>
+            </ul>
+        </ul>
+
+        <h2 id="Chapter_0_-_Initial_Setup">Chapter 0 - Initial Setup</h2> 
+
+        <p>
+            So, you've downloaded <b>Hearts of Iron IV</b> and are finally ready to begin your story of conquest! <br>
+            Once you've launched hoi4 from Steam, you should be greeted by the <b>Paradox Interactive Launcher</b>. Much like the one for <b>Stellaris</b>, here you can enable and 
+            disable mods and DLCs for the game, as well as modify certain launch settings. <br>
+            Feel free to ignore everything here and just hit <strong>play</strong>!
+        </p>
+
+        <figure>
+            <img src="images/1 launcher.png" alt="The Paradox Interactive Launcher for Hearts of Iron 4's main screen.">
+            <figcaption>The HOI4 launcher. Change your DLCs and mod settings here!</figcaption>
+        </figure>
+
+        <!-- <h3>0.1 - Menus and Options</h3> -->
+
+        <p>
+            Depending on whether you installed hoi4 on a hard drive or SSD, hoi4 can take up to a few minutes to load. It is normal for it to take surprising long to load on a first
+            boot, much like <b>Stellaris</b>. <br>
+            Once you're in, you'll be greeted by the hoi4 main menu! Head on over to the <strong>Options</strong> tab before you start playing.
+        </p>
+
+        <figure>
+            <img src="images/2 main menu.png" alt="The Hearts of Iron 4 main menu screen. The background is of D-Day, the default without DLCs.">
+            <figcaption>The main menu for HOI4! You should see this same background art of D-Day if you did not buy any DLCs.</figcaption>
+        </figure>
+
+        <p>
+            Here, feel free to set your settings to those that you prefer, such as toning down graphical settings. However, be aware of two things. <br>
+            One, <strong>audio is important</strong> in hoi4, as many important notification will play a sound effect when they occur. Learning to recognize these alerts will 
+            greatly improve your ability in playing! <br>
+            And two, <strong>ensure the following graphical options are enabled</strong>, as it is easier to play with these visual indicators.
+        </p>
+
+        <figure>
+            <img src="images/3 graphical options.png" alt="The Hearts of Iron 4 options screen. The options for 3D buildings, 3D units, and rivers are highlighted.">
+            <figcaption>Make sure to enable these options as well as sound!</figcaption>
+        </figure>
+
+        <p>
+            Next, head on over to the <strong>Multiplayer</strong> tab. Here is where you can host or join multiplayer games of hoi4. <br>
+            Once you're here, make sure to <strong>change your nickname</strong> on the top left where it says <em>player</em>! All players are given this nickname by default, so it'll be confusing if 
+            we have a bunch of "Players" running around in our games. <br>
+            Here, it is most reliable to either join games via Steam or have the host send you the server ID and use the <strong>Connect to Server ID</strong> button.
+        </p>
+
+        <figure>
+            <img src="images/4 multiplayer menu.png" alt="The Hearts of Iron 4 multiplayer screen. The nickname and Connect to Server ID buttons are highlighted.">
+            <figcaption>Remember that a multiplayer will only use the DLCs of the host, which is then shared to all joining players.</figcaption>
+        </figure>
+
+        <p>
+            Here's what the multiplayer lobby looks like. Besides the inclusion of the multiplayer lobby, it is almost identical to what it looks like in singleplayer. 
+        </p>
+
+        <figure>
+            <img src="images/5 multiplayer lobby.png" alt="The Hearts of Iron 4 multiplayer lobby screen.">
+            <figcaption>Don't worry about the map, we'll get to it soon!</figcaption>
+        </figure>
+
+        <p>
+            Head back to the main menu and go to the <strong>Singleplayer</strong> tab. Let's actually jump into the game now! <br>
+            Make sure to select the <strong>1936 Gathering Storm</strong> scenario.
+        </p>
+
+        <figure>
+            <img src="images/6 scenario selection.png" alt="The Hearts of Iron 4 multiplayer scenario selection screen.">
+            <figcaption>The 1939 one will jump you straight into action, but you won't get to set things up yourself!</figcaption>
+        </figure>
+
+        <p>
+            You'll now find yourself on the <strong>Interesting Countries</strong> screen. Here, you can select one of the major countries (known as <strong>majors</strong>) on the 
+            top or one of the minor countries (known as <strong>minors</strong>) that <em>have additional content</em> on the bottom. Feel free to look through each country to see 
+            what interests you! <br>
+            Now, hit the <strong>Other countries</strong> option to see the potential that hoi4 can offer.
+        </p>
+
+        <figure>
+            <img src="images/7 interesting countries all dlc.png" alt="The Hearts of Iron 4 Interesting Countries menu. All DLC nations up to Battle for the Bosphorus are present.">
+            <figcaption>If you only have the base game, you'll only see Poland as an available minor (with the free United and Ready DLC). With additional DLCs, as you can see, you can get many more!</figcaption>
+        </figure>
+
+        <p>
+            And here's something that truly makes hoi4 special. Any nation present on the map, you can play as by using <strong>LMB (left clicking)</strong>! <br>
+            To navigate the map, you can either use <strong>the arrow keys</strong> or <strong>click and drag using MMB (the mouse wheel)</strong>. <br>
+            <strong>Scroll up and down</strong> to zoom in and out of the map. 
+        </p>
+
+        <p>
+            Once you feel accustomed to the controls of map navigation (you'll need to do this alot in the game!) feel free to pick a nation and get started. I recommend picking a 
+            <strong>major</strong> to begin with, specifically the <em>German Reich</em> or <em>Italy</em> (be careful that Italy starts in a war with Ethiopia!). <br>
+            Make sure to <strong>enable historical AI focuses</strong> so you can rely on your knowledge of history!
+        </p>
+
+        <figure>
+            <img src="images/8 country map selection.png" alt="The Hearts of Iron 4 country selection map. The United States is selected and both the enabled historical AI focuses and start button are highlighted.">
+            <figcaption>This tutorial will use the United States, since I feel uncomfortable having so many pictures of fascist leaders in a public facing site...</figcaption>
+        </figure>
+
+        <p>
+            And with that, you're starting your first game of Hearts of Iron IV! This marks the end of chapter 0 of this tutorial. <br>
+            Now, we'll really start getting into the game with the next chapter!
+        </p>
+
+        <h2 id="Chapter_1_-_Beginner_Section">Chapter 1 - Beginner Section</h2>
+
+        <h3 id="1.0_-_General_Tips">1.0 - General Tips</h3>
+
+        <p>
+            Before we start this section, I'd like to begin with some small tips that you should keep in mind throughout this entire guide.
+        </p>
+
+        <ol>
+            <li>
+                Many things have tooltips! When in doubt, mouse over something. Chances are, it'll pop up a tooltip explaining more details!
+            </li>
+            <li>
+                Hoi4 takes advantages of colours alot. If something is green, that's generally a good thing. If something is red, that's generally bad. Even if you don't know what 
+                something does, you can use this rule of thumb to figure out if it's beneficial or not!
+            </li>
+        </ol>
+
+        <p>
+            And with that, let's jump into things! As we've left off in the previous chapter, you should now be in a game of hoi4. <strong>Don't be overwhelmed by the number of buttons!</strong>
+            We'll slowly, but surely, get through all of them. <br>
+            For now, turn your attention to the <strong>alerts</strong> near the top of the screen.
+        </p>
+
+        <figure>
+            <img src="images/9 starting usa.png" alt="The starting screen for the United States. The alert icons at the top of the screen are highlighted.">
+            <figcaption>Try to tune out the visual noise and focus on what's highlighted!</figcaption>
+        </figure>
+
+        <p>
+            These alerts generally indicate important issues plaguing your country that you should address. Mousing over them will give additional details on what the issue at hand is. <br>
+            <strong>Left click</strong> them to be sent to the relevant menu to address the issue and <strong>right click</strong> to dismiss them (<em>but don't do any of that now!</em>).
+        </p>
+
+        <p>
+            These issue cover a wide range of gameplay, so we'll tackle them slowly and in a particular order. Hopefully this guide will explain everything clearly!
+        </p>
+
+        <h3 id="1.1_-_Basic_Country_Management">1.1 - Basic Country Management</h3>
+
+        <h4 id="1.1.1_-_National_Focus">1.1.1 - National Focus</h4>
+
+        <p>
+            First, turn your attention to this icon. 
+        </p>
+
+        <figure>
+            <img src="images/10 national focus not set alert.png" alt="The National Focus not set alert icon and tooltip.">
+        </figure>
+
+        <p>
+            This indicates that a <strong>National Focus</strong> has not been set. You can access the <strong>National Focus Tree</strong> via the <strong>Political Tab</strong> 
+            which you can open by <strong>clicking your flag</strong> or by <strong>pressing Q</strong>.
+        </p>
+        
+        <figure>
+            <img src="images/11 going to national focus tree.png" alt="The National Focus tree button for the United States. The button and the flag are highlighted.">
+            <figcaption>The flag is a button!</figcaption>
+        </figure>
+
+        <p>
+            Here, you'll be brought to your country's national focus tree. These trees are different between countries to reflect different situations different countries found 
+            themselves in the 1930s. Countries that do not have content (or is locked behind DLC) will use the <strong>Generic Focus Tree</strong> instead. <br>
+            To naviagate the tree, <strong>click and drag (LMB)</strong> to move around the tree and <strong>scroll up and down</strong> to zoom in and out.
+        </p>
+
+        <figure>
+            <img src="images/12 usa focus tree.png" alt="The political section of the United States focus tree.">
+            <figcaption>Here's part of the US focus tree. Some DLCs also add additional content for existing focus trees, so if you're playing alongside me as the US, you'll notice that I have some extra alternative history branches! (and a spicy focus on the bottom right)</figcaption>
+        </figure>
+
+        <p>
+            To view a focus, <strong>left click it</strong> to see its <strong>requirements</strong>, <strong>effects</strong>, and <strong>time to complete</strong> as well as the 
+            option to <strong>start completing it</strong>.
+        </p>
+
+        <figure>
+            <img src="images/12.5 focus details.png" alt="The Continue the New Deal focus with the start button highlighted.">
+            <figcaption>Continue FDR's New Deal!</figcaption>
+        </figure>
+
+        <p>
+            Focuses that are <strong>gold</strong> are <strong>completed</strong>. Ones that are <strong>grey</strong> are <strong>available</strong>. 
+            And ones that are <strong>black</strong> are <strong>still locked</strong>.
+        </p>
+
+        <figure>
+            <img src="images/13 focus options.png" alt="Three focuses, one completed, one available, and one locked.">
+            <figcaption>Here, Continue the New Deal has been completed, Neutrality Act is available but not yet done, and The Giant Wakes is still locked.</figcaption>
+        </figure>
+
+        <p>
+            Like a proper tree, the focus tree has branches and <strong>exclusive paths</strong>. Sometimes the lines can be confusing, so just read the focus requirements!
+        </p>
+
+        <figure>
+            <img src="images/14 splits and forks in focus tree.png" alt="A split branch in the focus tree.">
+            <figcaption>Here, Limited Intervention and Neutrality Act are mutually exclusive and thus so is War Propaganda and Arsenal of Democracy. Lend Lease Act is available with either focus though.</figcaption>
+        </figure>
+
+        <p>
+            Many focuses typically take <strong>70 days</strong> to complete and only <strong>one focus can be completed at any one time</strong>. You'll generally be able to get
+            through all focuses within a game, but keep in mind that some focuses might no longer be worth it towards the end! <br>
+            If you're playing along as the German Reich or Italy, I recommend starting with <em>Rhineland</em> or <em>Ethiopian War Logistics</em> as your first focus.
+        </p>
+
+        <p>
+            Note that HOI4 runs at <strong>one hour per tick</strong> in contrast to <b>Stellaris</b> which runs at <strong>one day per tick</strong>. To compensate, while 
+            <b>Stellaris</b> runs from 2200 to 2500, HOI4 runs from <strong>1936 to 1948</strong>.
+        </p>
+
+        <figure>
+            <img src="images/15 clock.png" alt="The top right corner of the UI. The ingame clock is highlighted.">
+            <figcaption>All games start at 12pm of Janurary 1, 1936 (except if you do the other scenario).</figcaption>
+        </figure>
+
+        <h4 id="1.1.2_-_Research">1.1.2 - Research</h4>
+
+        <p>
+            Now we can move on to the second tree system in HOI4, the <strong>research tree</strong>. <br>
+            Turn your attention to this icon.
+        </p>
+
+        <figure>
+            <img src="images/16 research slot alert.png" alt="The Research Slot not in use alert icon and tooltip.">
+        </figure>
+
+        <p>
+            This indicates that you have research slots not currently in use. You can access the <strong>Research Tab</strong> by clicking the little 
+            <strong>magnifying glass and beaker icon</strong> or by <strong>pressing W</strong>.
+        </p>
+
+        <figure>
+            <img src="images/17 research tab.png" alt="The Research Tab for the USA. There are 4 unused slots.">
+            <figcaption>Different countries start with different numbers of research slots. The US, being very advanced, starts with 4. Countries can have between 1 and 6 slots overall.</figcaption>
+        </figure>
+
+        <p>
+            Clicking any of these slots will bring you to the research tree. Unlike national focus trees, research trees are <strong>the same for every country</strong>, though 
+            different countries may <strong>start with</strong> different technologies. <br>
+            Technologies in <strong>green</strong> are already <strong>researched</strong>. Those in <strong>yellow</strong> are <strong>available</strong> and those in 
+            <strong>grey</strong> are <strong>still locked</strong>.
+        </p>
+
+        <figure>
+            <img src="images/18 initial research tree.png" alt="The ground unit research tab for the USA.">
+            <figcaption>Note how the US starts with Infantry Equipment I (2nd tier of guns) and Motorized (trucks) already researched.</figcaption>
+        </figure>
+
+        <p>
+            To naviagate the tree, <strong>click and drag (LMB)</strong> to move around. Use <strong>left click</strong> to select technologies and change tabs.
+        </p>
+
+        <figure>
+            <img src="images/19 research details.png" alt="The Support Weapons I technology.">
+            <figcaption>The research tree functions very similarily to the focus tree.</figcaption>
+        </figure>
+
+        <p>
+            Unlike national focus trees, research trees are split into <strong>different tabs</strong> which can be access along the top. These tabs are <strong>colour coded</strong> 
+            based on what field they fall in, with <strong>green</strong> meaning <strong>land units</strong>, <strong>blue</strong> meaning <strong>navy</strong>, <strong>red</strong>
+            meaning <strong>airforce</strong>, and <strong>orange</strong> meaning <strong>civilian</strong>. <br>
+            To simplify things, feel free to ignore most research tabs and focus only on the following.
+        </p>
+
+        <figure>
+            <img src="images/20 recommended research tabs.png" alt="The research tree with the infantry, armor, artillery, engineering, and industry tabs highlighted.">
+            <figcaption>Feel free to also research into the Support Companies and Land Doctrine tabs if you are comfortable! (i.e. the remaining green tabs)</figcaption>
+        </figure>
+
+        <p>
+            You may have already noticed the years on the screen that roughly line up with certain technologies. This indicates what <strong>year a technology is from</strong> and 
+            researching technologies that are in the future will encur a <strong>time ahead penalty</strong>. This penalty lessens the closer you get to the actual time of the technology. <br>
+            Only <strong>Doctrine technologies</strong> (in their respective doctrine tabs) are timeless.
+        </p>
+
+        <figure>
+            <img src="images/21 time ahead penalty.png" alt="The Atomic Research technology has a 4 year time ahead penalty.">
+            <figcaption>Game's not letting you rush spicy bombs.</figcaption>
+        </figure>
+
+        <p>
+            Multiple research slots work <strong>independent</strong> of each other, so make sure all your research slots are always researching something! <br>
+            I recommending starting with <em>Basic Machine Tools</em> or <em>Concentrated Industry I</em>, <em>Construction I</em>, <em>Electronic Mechanical Engineering</em> or 
+            <em>Mechanical Computing</em>, and either <em>Support Weapons I</em> or the next Land Doctrine technology as your first technologies.
+        </p>
+
+        <figure>
+            <img src="images/22 recommended tech.png" alt="My recommendations for starting technologies.">
+            <figcaption>These technologies can be found in the Industry, Engineering, Infantry, and Land Doctrine tabs.</figcaption>
+        </figure>
+
+        <p>
+            Lastly, note that <strong>not all technologies give existing things bonuses</strong>. Some, instead, introduce <strong>brand new equipment</strong> that need to be 
+            produced before you get its benefit. What do I mean about <strong>producing equipment</strong>? Well keep that in the back of your mind because it'll come up in a little bit!
+        </p>
+
+        <figure>
+            <img src="images/23 unlock new equipment.png" alt="The tooltip for the USA Infantry Equipment 2. Note that the wording says Enable.">
+            <figcaption>Note the wording of the technology.</figcaption>
+        </figure>
+
+        <p>
+            And that's the end of the trees! This may be a good time to take a break and let what you've learnt sink in. Or to maybe reread everything up till now to really cement
+            that understanding. Either way, good work! That's two major game concepts out of the way for now!
+        </p>
+
+        <h4 id="1.1.3_-_Construction">1.1.3 - Construction</h4>
+
+        <p>
+            Now let's move on to buildings and construction. Turn your attention to this icon.
+        </p>
+
+        <figure>
+            <img src="images/25 civs not in use alert.png" alt="The civilian factory not in use alert icon and tooltip.">
+        </figure>
+
+        <p>
+            This indicates that you have <strong>Civilian Factories</strong> (often shortened to <strong>civs</strong>) that are standing idle. <br>
+            Civs represent the civilian industrial capabilities of your country and thus tend to make up <strong>the backbone of your economy</strong>. Buildings and structures in 
+            hoi4 are <strong>built by civs</strong>. <br>
+            To put them to work, 
+            head over to the <strong>Construction Tab</strong> by clicking the little <strong>digger</strong> or by <strong>pressing T</strong>.
+        </p>
+
+        <figure>
+            <img src="images/26 construction tab.png" alt="The Construction Tab for the USA.">
+            <figcaption>The US has a mighty economy, hence why they have over 100 starting civs!</figcaption>
+        </figure>
+
+        <p>
+            The construction tab is where you can <strong>queue up buildings to be built</strong>, but before we talk about how to do so, we need to talk about 
+            <strong>states</strong> and <strong>provinces</strong>.
+        </p>
+
+        <!-- Anchor Here? -->
+
+        <p>
+            When you click a piece of territory on land, <strong>two</strong> things will be highlighted: the smaller <strong>province</strong> in bright <strong>yellow</strong> and the 
+            larger <strong>state</strong> in <strong>white</strong>. <br>
+            Also open is some information about the state and province. Note that only <strong>states</strong> have names (this state is <em>New York</em>).
+        </p>
+
+        <figure>
+            <img src="images/24 state and province example.png" alt="New York City, New York province selected.">
+            <figcaption>Keep an eye on that infobox in the bottom left, it'll come up soon!</figcaption>
+        </figure>
+
+        <p>
+            Provinces are the <strong>smallest subdivision</strong> of the hoi4 map and is the <strong>grid system for ground units</strong>, meaning ground units move and attack 
+            along province lines (<strong>a province can only have units from one allied side within it</strong> during wartime!). <br>
+            States are collections of provinces and is the smallest subdivision of territory <strong>in terms of control</strong> (i.e. in peace time, a state can only be controlled by 
+            <strong>exactly one</strong> country). 
+            <!-- Unnessary -->
+            <strong>Claims</strong> and <strong>Cores</strong> are thus also enacted at the state level.
+        </p>
+
+        <p>
+            Why this is important, is because buildings in hoi4 come in three flavours: <strong>state structures</strong> (top), <strong>shared structures</strong> (middle), and 
+            <strong>province structures</strong> (bottom). <br>
+            The most important buildings and structures are state and shared structures, both types of which are built <strong>at the state level</strong>.
+        </p>
+
+        <figure>
+            <img src="images/27 building types.png" alt="The different buildings and structures of Hearts of Iron 4.">
+            <figcaption>Notice that some buildings are greyed out, as they have yet to be unlocked in the research tab.</figcaption>
+        </figure>
+
+        <p>
+            We'll be ignoring most of the state structures for now, but let's take a quick peek at how building them works. Select the <strong>infastructure railway icon</strong> in the 
+            construction tab.
+        </p>
+
+        <figure>
+            <img src="images/28 build infa.png" alt="The construction tab with the infastructure button highlighted.">
+            <figcaption>Infastructure is the only important state structure for now.</figcaption>
+        </figure>
+
+        <p>
+            Whoa! That's a lot of stuff! Don't worry about most of it, what is important is that each state has a <strong>number out of ten</strong> at the top. This number indicates the 
+            current <strong>level of infastructure</strong> in that state, which can go up to a <strong>maximum of ten</strong>. <br>
+            All <strong>state structures</strong> work the same way, where the structure can be upgraded to its maximum, <strong>no matter the state</strong> (as long as you own it). <br>
+            Also note that all these states are in <strong>green</strong>. States that you can still build in will be green, while states that are full will be <strong>blue</strong>.
+        </p>
+
+        <figure>
+            <img src="images/29 where to build infa.png" alt="The build map for infastructure for the USA.">
+            <figcaption>Also note that the darker the green, the more full the state is for the building!</figcaption>
+        </figure>
+
+        <p>
+            Let's avoid building any infastructure for now. You can exit this mode by <strong>exiting the construction tab</strong> or you can <strong>select a different building</strong>.
+        </p>
+
+        <p>
+            Let's start actually building! We should begin with the two most important buildings of hoi4, <strong>civilian factories</strong> and <strong>military factories</strong>. 
+            A country needs its industry for both its economy and military, so let's queue up some factories! <br>
+            <strong>Select the orange civilian factory icon</strong> in the construction tab.
+        </p>
+
+        <figure>
+            <img src="images/30 build civs.png" alt="The construction tab with the civilian factory button highlighted.">
+            <figcaption>Colour is very important in hoi4!</figcaption>
+        </figure>
+
+        <p>
+            Another build map! This time it should be less intimidating. And look, some states are now in blue, indicating that they are full for civilian factories! <br>
+            You've probably now noticed that this time, the build cap is different for each state. This is because, unlike infastructure, civilian factories are <strong>shared buildings</strong>.
+        </p>
+
+        <figure>
+            <img src="images/31 where to build civs.png" alt="The build map for factories for the USA.">
+            <figcaption>Notice the little infastructure icon with a green percentage? The more infastrcture you have in a state, the faster it is to build in it!</figcaption>
+        </figure>
+
+        <p>
+            Each state (depending on how populated and industrious it is) has a different number of <strong>shared building slots</strong>. These slots are 
+            <strong>shared among all shared buildings</strong>. <br>
+            For example, <em>New York</em> has 12 starting building slots, so only 12 shared buildings can be built in that state.
+        </p>
+
+        <figure>
+            <img src="images/32 building slots.png" alt="The infobox for the state of New York. The build slots and shared buildings are highlighted.">
+            <figcaption>In this example, the shared buildings New York has are 2 military factories, 7 civilian factories, and 3 dockyards.</figcaption>
+        </figure>
+
+        <p>
+            The number of building slots a state has can be increased via some <strong>national focuses</strong> (and typically with some free buildings) and 
+            through the <em>concentrated industry</em> or <em>dispersed industry</em> technology, up to a maximum of 25 building slots.
+        </p>
+
+        <p>
+            Now, let's actually start building! <br>
+            To build in a state, <strong>left click</strong> to add it to the queue, <strong>right click</strong> to remove it from the queue. <br>
+            <strong>Shift left click</strong> fills the state with the building you selected, <strong>shift right click</strong> empties the state of the building queues. <br>
+            <strong>Control left click</strong> places the order to the top of the queue. <br>
+            States with <strong>yellow stripes</strong> have your currently selected building in the queue, states with <strong>blue stripes</strong> have your currently selected 
+            building in the queue <strong>and have no more free building slots</strong>.
+        </p>
+
+        <figure>
+            <img src="images/33 actually building.png" alt="Factories are being built in the northern USA. 6 factories are queued across 3 states.">
+            <figcaption>Don't ask me why Paradox decided 4 of the 5 Great Lakes count as American.</figcaption>
+        </figure>
+
+        <p>
+            Now with your factory orders in the queue, your civilian factories will work to complete those orders. <strong>Up to 15 civs can work on the same order</strong> at the 
+            same time. The <strong>little progress bar</strong> can be <strong>moused over</strong> to see <strong>more details</strong>, such as when it'll finish building. <br>
+            Extra civs (beyond the 15 working on the initial order) will work on subsequent orders, but only on <strong>subsequent orders of different buildings or in different states</strong>
+            (e.g. the extra factories in the image are working on <em>Ohio</em>'s next factory, not <em>Florida</em>'s second dockyard). <br>
+            You can change the order of the queue either by <strong>click and dragging</strong> them or by <strong>using the arrows</strong>. <strong>Shift left clicking</strong> 
+            the arrows will send them to the beginning or end of the queue. Progress on a build order <strong>will be saved</strong> if you change the queue order. <br>
+            You can use the little <strong>plus and minus</strong> buttons to add or remove building queues (shift clicking the plus button also fills the state). The <strong>X button</strong> will cancel all of that one type of queue (with a confirmation).
+        </p>
+
+        <figure>
+            <img src="images/34 example build queue.png" alt="Many builds queued to be built. One such order is highlighted.">
+            <figcaption>This is just an example build queue, don't follow this exact sequence! (cuz it pretty bad)</figcaption>
+        </figure>
+
+        <p>
+            Whew, that was a lot! Now's a good time to take a break or try a bit of building yourself. Make sure that you feel comfortable with how construction works if you're 
+            currently trying it out in a game. <br>
+            I suggest your first constructions as a major to be <strong>civs</strong> in states with the <strong>highest infastructure bonus</strong> (that little green percentage
+            when you're on the factory build map).
+        </p>
+
+        <p>
+            Before we move on, if you're keen-eyed, you may have notice a discrepancy in the build numbers. For example, in the above image, it says that I have 165/165 civs, but yet 
+            only 32 are actually working on building stuff. This is because all remaining 133 are being used for <strong>consumer goods</strong>. <br>
+            Hoi4 is a game about war and not about peacetime (if you're interested in something with more peacetime focus, try <b>Victoria II</b> or <b>Victoria 3</b> when it comes out),
+            so we don't care about what the needs of civilians are. As such, consumer goods give <strong>no benefits</strong> at all and only take up civilian factories that could've been used for building. <br>
+            We'll be touching on <strong>internal politics</strong> later on, but for now keep in the back of your mind that <strong>things that decrease consumer goods factories are good</strong>
+            and <strong>things that increase it are bad</strong>.
+        </p>
+
+        <h4 id="1.1.4_-_Production">1.1.4 - Production</h4>
+
+        <p>
+            An army without guns is just a big crowd and it is up to you to plan your country's war effort! That's right, it's time to talk about <strong>equipment production</strong>! <br>
+            Turn your attention now to this icon.
+        </p>
+
+        <figure>
+            <img src="images/35 mils not in use alert.png" alt="The military factories not in use alert icon.">
+        </figure>
+
+        <p>
+            This indicates you have <strong>Military Factories</strong> (often shortened to <strong>mils</strong>) that are idle. <br>
+            Unlike civilian factories, military factories are tooled to <strong>produce military hardware</strong>. <br>
+            To add them to production lines, head over to the <strong>Production Tab</strong> by clicking the little <strong>wrench and gear</strong> or by <strong>pressing Y</strong>.
+        </p>
+
+        <figure>
+            <img src="images/36 production tab.png" alt="The production tab for the USA.">
+            <figcaption>The US doesn't start with as big of a military base, but that'll change quickly!</figcaption>
+        </figure>
+
+        <p>
+            In hoi4, equipment are produced in <strong>assembly lines</strong>, where many factories can work together on producing one kind of equipment. <br>
+            Let's focus on just one assembly line. The assembly line indicates <strong>what equipment it is producing</strong>, <strong>its rate of production</strong>, 
+            and <strong>how many mils are assigned</strong> to the production line.
+        </p>
+
+        <figure>
+            <img src="images/37 production line basic info.png" alt="A production line for the USA's M1 Garand. The equipment type, production rate, and factories assigned are highlighted.">
+            <figcaption>The green bar underneath the production rate shows the equipment's production progress, which is updated per day. Since we're producing more than one a day, the bar is solid.</figcaption>
+        </figure>
+
+        <p>
+            More factories can be assigned using the little <strong>plus and minus buttons</strong> (holding down <strong>control</strong> changes it to increments of five, 
+            <strong>shift</strong> changes it to increements of ten) or by <strong>clicking a square in the grid of factories</strong> (clicking the <strong>x5 and x10</strong>
+            changes the increments).
+        </p>
+
+        <figure>
+            <img src="images/38 assigning mils.png" alt="Assigning factories to a production line of support equipment. More factories then there are present are assigned to infantry equipment.">
+            <figcaption>Left clicking here will assign 5 additional factories to support equipment (for a total of 6).</figcaption>
+        </figure>
+
+        <p>
+            Notice that in the top production line, 6 of the 13 factories are <strong>greyed out</strong>. This is because we've <strong>assigned more factories than there currently exists</strong>. 
+            When new mils are made available, they will <strong>automatically be assigned to these greyed out position</strong>, in priority from <strong>top to bottom</strong>.
+        </p>
+
+        <p>
+            A new production line can be created using the buttons at the top of the tab. They are sorted by <strong>equipment type</strong>, being split between infantry, armor, 
+            and air. Simply select what equipment you wish to produce and a new production line will be created <strong>at the bottom</strong>. <br>
+            Productions lines can be moved around by <strong>clicking and dragging</strong> them and can be deleted by <strong>clicking the little trash icon</strong> (with a confirmation).
+        </p>
+
+        <figure>
+            <img src="images/39 creating and deleting production lines.png" alt="Creating a new infantry production line. The create production line buttons, equipment, and a delete production line button are highlighted.">
+            <figcaption>Try to have unified production lines, so only one production line of one kind of equipment. It'll simplify things a lot!</figcaption>
+        </figure>
+
+        <p>
+            You can also change what equipment an existing production line is producing, which is typically <strong>only used for changing production to an upgraded equipment</strong>.
+            To do so, simply <strong>click the equipment picture</strong> and find the replacing equipment (be careful to select the right equipment for reasons coming up!). <br>
+            Outdated equipment being produced will have a <strong>brown background</strong> and you'll also get an alert icon.
+        </p>
+
+        <figure>
+            <img src="images/40 equipment upgrade.png" alt="Upgrading an infantry equipment production line from equipment ones to equipment twos.">
+            <figcaption>Upgraded versions of equipment will have a faint glowing effect and appear towards the top of the list when you first check your production's equipment.</figcaption>
+        </figure>
+
+        <!-- This below section might be too overcomplicated for chapter 1 -->
+
+        <p>
+            The last two things we'll be covering about production lines are <strong>production efficiency</strong> and <strong>resources</strong>. <br>
+            Starting with production efficiency, it is why you should be careful about switching equipment. Essentially, the longer a production line is <strong>left untouched</strong>, the 
+            <strong>better it becomes at producing equipment</strong>. This bonus is reduced when adding new factories and when switching production. 
+        </p>
+
+        <p>
+            Next, all equipment requires <strong>resources</strong> to produce. A unit of resource in hoi4 is <strong>not</strong> a single unit of resource, but rather 
+            <strong>a constant income of a unit of resource</strong>. Resources will be covered later on, but for now, know that a production line that is <strong>missing resources</strong>
+            will <strong>produce equipment and earn efficiency at a slower rate</strong> (or even 0 depending on the equipment and missing resources!).
+        </p>
+
+        <figure>
+            <img src="images/41 prod eff and lack of resources.png" alt="A production line that has low efficiency and is missing some resources.">
+            <figcaption>An equipment production bar in yellow means it is missing some resources. Red means it is missing a catastrophic amount of resources.</figcaption>
+        </figure>
+
+        <!-- This above section ... -->
+
+        <p>
+            You'll notice that we've only been dealing with the <strong>green</strong> material in the production tab and not the <strong>blue</strong> material. Similar to ground 
+            and air equipment, <strong>ships</strong> are produced with <strong>dockyards</strong>, but have some key differences. Due to this, don't worry about it for now! <br>
+            If you do have extra dockyards sitting around, feel free to put them on to <em>convoys</em>.
+        </p>
+
+        <p>
+            And with that, you've made it past the production mechanics! This is a good time to stop and take in everything, as production is one of the most densely packed 
+            gameplay feature. Feel free to take some time and familiarize yourself with production lines when you get a chance. <br>
+            If you're following along in game, I suggest starting your production line in a similar fashion to mine below.
+        </p>
+
+        <figure>
+            <img src="images/42 example production lines.png" alt="Some example production lines.">
+            <figcaption>Feel free to adjust your production line as you see fit, which you'll get the wisdom for soon!</figcaption>
+        </figure>
+
+        <h4 id="1.1.5_-_Government">1.1.5 - Government</h4>
+
+        <p>
+            That was a lot of difficult gameplay mechanics! We'll finish up this section with a small intro to managing your government. <br>
+            Navigate back to the <strong>politics tab</strong> by <strong>clicking your flag</strong> or <strong>pressing Q</strong>.
+        </p>
+
+        <p>
+            At the top of the screen, there are three stats/resources for your nation. From left to right, they are <strong>political power</strong>, <strong>stability</strong>, and 
+            <strong>war support</strong>. <br>
+            Below the national focus button, you have your country's <strong>national spirits</strong>. <br>
+            The final thing we'll discuss in this section is your <strong>governing laws and advisors</strong>.
+        </p>
+
+        <figure>
+            <img src="images/43 government tab.png" alt="The politics tab for the USA. Political power, stability, war support, national spirits, and the laws and advisors are highlighted.">
+            <figcaption>We'll discuss that political pie chart in chapter 2!</figcaption>
+        </figure>
+
+        <p>
+            First, the three at the top. <strong>Political power</strong> is passively earned <strong>per day</strong> at a <strong>base rate of 2 per day</strong>, but 
+            <strong>1 is also consumed each day a national focus is progressing</strong>. It is used to <strong>modify your government</strong> and to <strong>enact decisions</strong>. 
+            Political power can go into the negatives and is capped at <strong>2000</strong>. <br>
+            Next, <strong>stability</strong> and <strong>war support</strong> are measures of your population's opinion of your country. They range between <strong>0% to 100%</strong>,
+            but the value <strong>can go over and under this cap</strong> (negative values will be displayed, but values over 100 will not). 
+            The base line value for both is <strong>50%</strong>, where you recieve <strong>no positive nor negative effects</strong>. You can <strong>mouse over</strong> both values 
+            to see what benefits or penalties are being applied.
+        </p>
+
+        <p>
+            <strong>National spirits</strong> are representation of forces acting within your country. They can have <strong>positive, negative, or a mixed of both effects</strong>.
+            They are typically gained or removed through <strong>national focuses or events</strong>.
+        </p>
+
+        <p>
+            <strong>Laws, advisors, designers, and military staff</strong> of your government can be changed at any time, given you <strong>have the political power</strong> and 
+            <strong>meet the prerequisites for whatever you are changing</strong>. They give various useful buffs to your country.
+        </p>
+
+        <p>
+            And that's it! Short one this time, as learning about laws and government is best done through experience. It doesn't matter too much if you hire incorrect advisors,
+            so feel free to try things out! <br>
+            With that, we've completed the basic country management section! In our next section, we'll be learning about <strong>basic army management</strong>. Feel free to take a
+            break and come back later!
+        </p>
+
+        <h3 id="1.2_-_Basic_Army_Management">1.2 - Basic Army Management</h3>
+
+    </body>
+</html>
