@@ -25,7 +25,8 @@
 
         <p>
             <strong>Some images in this guide are full resolution 1920x1080 images scaled down to fit on screen. If something is difficult to read, feel free to open it in a new 
-            tab and use your browser's built-in zoom function!</strong>
+            tab and use your browser's built-in zoom function!</strong> <br>
+            This guide is best suited for <strong>large screens/monitors</strong>.
         </p>
 
         <p>
@@ -74,6 +75,15 @@
                     <li>
                         <a href="#1.2.2_-_Microing">1.2.2 - Microing</a>
                     </li>
+                    <li>
+                        <a href="#1.2.3_-_Armies">1.2.3 - Armies</a>
+                    </li>
+                    <li>
+                        <a href="#1.2.4_-_War_Diplomacy">1.2.4 - War Diplomacy</a>
+                    </li>
+                    <li>
+                        <a href="#1.2.5_-_Basic_Combat">1.2.5 - Basic Combat</a>
+                    </li>
                 </ul>
             </ul>
         </ul>
@@ -82,7 +92,7 @@
 
         <p>
             So, you've downloaded <b>Hearts of Iron IV</b> and are finally ready to begin your story of conquest! <br>
-            Once you've launched hoi4 from Steam, you should be greeted by the <b>Paradox Interactive Launcher</b>. Much like the one for <b>Stellaris</b>, here you can enable and 
+            Once you've launched hoi4 from <b>Steam</b>, you should be greeted by the <b>Paradox Interactive Launcher</b>. Much like the one for <b>Stellaris</b>, here you can enable and 
             disable mods and DLCs for the game, as well as modify certain launch settings. <br>
             Feel free to ignore everything here and just hit <strong>play</strong>!
         </p>
@@ -757,22 +767,15 @@
         <!-- Remove sentence on exp? -->
 
         <p>
-            Let's focus on one division. Here you'll find information on the division's <strong>organization</strong>, <strong>strength</strong>, <strong>training level</strong>,
-            <strong>name</strong>, and <strong>icon</strong>. <br>
-            The <strong>green bar</strong> shows the division's <strong>organization</strong>. Organization is reduced by a division's actions, such as <strong>moving, attacking, or defending</strong>. 
-            It is <strong>passively regained over time</strong> when a division is not performing an action. <br>
-            The <strong>orange bar</strong> shows the division's <strong>strength</strong>. Strength represents the health of the unit, which can be reduced by <strong>losses in combat</strong>.
-            A unit with lower strength <strong>fights at lower effectiveness</strong> and a division is <strong>destroyed</strong> if its strength reaches zero. Units are 
-            <strong>automatically reinforced over time</strong> if reinforcements and equipment are <strong>available</strong>. <br>
-            The <strong>yellow bar and emblem</strong> shows a unit's <strong>experience</strong>. It is gained through <strong>combat</strong> and <strong>training</strong> and 
-            lost through <strong>losses</strong>. Units with higher experience <strong>fights more effectively</strong>. <br>
+            Here you'll find information on your selected divisions. We'll ignore the other symbols and bars for now and instead focus on the division's <strong>name</strong> and 
+            <strong>icon</strong>. <br>
             The <strong>name</strong> and <strong>icon</strong> of a division helps you identify a specific division and its <strong>division template</strong>, which you can think 
             of as <strong>different unit types</strong> for now.
         </p>
 
         <figure>
             <img src="images/47 single division.png" alt="A single division from the USA.">
-            <figcaption>Colours never stop being important!</figcaption>
+            <figcaption>The colourful stuff will be important later!</figcaption>
         </figure>
 
         <p>
@@ -817,7 +820,329 @@
         </figure>
 
         <p>
-            If a division from one side of a war attempts to move into a province occupied by a division from the other side, a <strong>battle begins</strong>.
+            Having to micro dozens of divisions at once would quickly become very tedious, so hoi4 gives you tools to manage many divisions at once.
+        </p>
+
+        <h4 id="1.2.3_-_Armies">1.2.3 - Armies</h4>
+
+        <p>
+            Like in real life, divisions in hoi4 can be managed into <strong>armies</strong>. Armies can be created by clicking the <strong>empty portrait icon with divisions</strong>
+            selected (doing so will automatically add the selected divisions into that army).
+        </p>
+
+        <figure>
+            <img src="images/51 creating army.png" alt="26 American divisions are selected. The create army button is highlighted.">
+            <figcaption>It's the button on the right, not the one on the left!</figcaption>
+        </figure>
+
+        <p>
+            You can <strong>shift left click</strong> the <strong>unassigned divisions alert icon</strong> to easily select all unassigned divisions and assign them to an army.
+        </p>
+
+        <figure>
+            <img src="images/52 unassigned divisions alert.png" alt="The unassigned divisions alert icon.">
+        </figure>
+
+        <p>
+            Armies in hoi4 have two main benefits, <strong>organizing divisions</strong> and <strong>issuing mass orders</strong>. <br>
+            First, notice how it becomes easier to select relevant units, as all units in the army will appear in the unit sidebar <strong>even if they aren't selected</strong>,
+            making it easier to select and deselect certain divisions. <br>
+            <strong>Double clicking</strong> an army (at the bottom of the screen) will <strong>always select the army and all divisions within it</strong>. 
+            Note that the army will also track how many divisions are assigned. <br>
+            When an army is created, a <strong>colour</strong> is assigned to that army which allows divisions associated with that army to be easily identified. This colour can 
+            be changed by <strong>clicking the colour tab</strong>. <br>
+            Divisions can be <strong>unassigned from an army</strong> by clicking the little <strong>unassign</strong> button, and divisions can be <strong>transferred</strong> 
+            between new and existing armies by selecting some divisions and either <strong>clicking the create army button</strong> or by 
+            <strong>right clicking the destination army</strong>. If reassigning units will leave an army empty, that army will be deleted (with a confirmation). <br>
+            A <strong>general</strong> can also be assigned to the army by <strong>clicking the portrait assignment</strong> in the unit sidebar. A general will boost the fighting
+            capabilities of an army and bring useful skills. We'll cover more about generals in the next chapter!
+        </p>
+
+        <figure>
+            <img src="images/53 armies.png" alt="An army of American divisions. The Army, colour tab, and unassign buttons are highlighted.">
+            <figcaption></figcaption>
+        </figure>
+
+        <p>
+            Next, while better organization is always great, the truly useful thing about armies is the ability to assign <strong>army-wide orders</strong>, known as 
+            <strong>battle plans</strong>. <br>
+            This allows you to give movement attack orders to dozens of divisions with only a few mouse clicks and frees you up to worry about the big picture during a war.
+        </p>
+
+        <p>
+            Turn your attention to the <strong>battle plans bar</strong>, which appears whenever <strong>you have an army selected</strong>.
+        </p>
+
+        <figure>
+            <img src="images/54 battle plans bar.png" alt="An army of American divisions. The battle plans bar is highlighted.">
+            <figcaption>More buttons! Don't worry, you'll quickly learn which buttons are used the most frequently.</figcaption>
+        </figure>
+
+        <p>
+            We'll only be focusing on some of the most commonly used battle plans as well as the battle plan editing buttons. The most essential battle plans are the 
+            <strong>front line</strong>, <strong>offensive line</strong>, and <strong>fallback line</strong> plans.
+        </p>
+
+        <figure>
+            <img src="images/55 basic battle plans.png" alt="The battle plan bar. The front line, offensive line, fallback line, and battle plan editing buttons are selected.">
+            <figcaption>The buttons on the right are exclusively to do with editing battle plans.</figcaption>
+        </figure>
+
+        <p>
+            First, the <strong>front line</strong> is, as the name suggests, an offensive line that your divisions will <strong>gather at</strong> for an attack. A front line is 
+            only drawn on the <strong>border of another nation</strong> and can be drawn <strong>regardless of peace or wartime and regardless of allegiance</strong>. <br>
+            To draw a front line, first select the <strong>front line</strong> button or <strong>press Z</strong>.
+        </p>
+
+        <figure>
+            <img src="images/56 select front line.png" alt="The battle plan bar. The front line button is highlighted.">
+            <figcaption>Remember the front line button as this little soldier icon with a dotted line and plus sign!</figcaption>
+        </figure>
+
+        <p>
+            Once selected, borders between you and other countries will glow <strong>yellow</strong>. Mousing over them will turn them <strong>green</strong> and 
+            <strong>provinces your divisions will move to</strong> will be shown in <strong>green stripes</strong>.
+        </p>
+
+        <figure>
+            <img src="images/57 drawing front line.png" alt="A frontline about to be drawn between the border of the USA and Mexico.">
+            <figcaption>Any borders work!</figcaption>
+        </figure>
+
+        <p>
+            <strong>Left clicking</strong> will draw a front line <strong>along the entire contiguous border</strong>. 
+        </p>
+
+        <figure>
+            <img src="images/58 full front line.png" alt="A front line across the entire USA-Mexico border.">
+        </figure>
+
+        <p>
+            To draw a <strong>partial front line</strong>, <strong>press and hold right click</strong> at where you want the front line <strong>to start</strong> and 
+            <strong>drag it</strong> until you reached where you want the front line to <strong>end</strong>.
+        </p>
+
+        <figure>
+            <img src="images/59 partial front line.png" alt="A front line across some of the USA-Mexico border.">
+        </figure>
+
+        <p>
+            With a battle plan drawn, you can see some details about it including <strong>which army it belongs to</strong> and <strong>how many divisions are assigned</strong>.
+        </p>
+
+        <figure>
+            <img src="images/60 front line info.png" alt="A front line saying that it belongs to the 1st army and has 26 divisions assigned to it.">
+            <figcaption>Also, mousing over any battle plan will highlight the battle plan in a distinct green.</figcaption>
+        </figure>
+
+        <p>
+            Whoa, what happened here? Many players new to the game might run into this issue, which occurs if they accidently drew a battle plan twice.
+        </p>
+
+        <figure>
+            <img src="images/61 doubled front line.png" alt="An accidential double front line.">
+            <figcaption>Don't worry if it happens to you!</figcaption>
+        </figure>
+
+        <p>
+            These are actually <strong>two distinct front line orders</strong> and can occur because hoi4 allows players to <strong>draw multiple battle plans</strong> and have 
+            <strong>empty battle plans</strong>. 
+        </p>
+
+        <p>
+            First, battle plans are disjoint subsets of armies, meaning that while <strong>an army can have multiple battle plans at once, a division can only ever belong to one battle plan</strong>. <br>
+            This means that if you have a battle plan containing all divisions in an army, then any subsequent battle plans must then contain no divisions. <br>
+            Empty battle plans will be <strong>dashed</strong> and indicate that they have no divisions assigned.
+        </p>
+
+        <p>
+            Being able to draw multiple battle plans is actually quite useful as players can freely <strong>reassign divisions to other battle plans</strong>. <br>
+            To do so, either use the <strong>division assignment mode button and left click</strong> the order you wish to reassign them to or use <strong>control left click</strong>. 
+        </p>
+
+        <figure>
+            <img src="images/62 division assignment.png" alt="26 divisions are being reassigned to an empty front line. The division reassignment button and message are highlighted.">
+            <figcaption>A common mistake when reassigning divisions is not selecting the correct divisions, so beware!</figcaption>
+        </figure>
+
+        <p>
+            Sometimes you also just want some divisions to micro freely. To achieve this, divisions can be <strong>unassigned</strong> from battle plans by selecting them and using the 
+            <strong>division unassignment button</strong> or <strong>pressing control H</strong>.
+        </p>
+
+        <figure>
+            <img src="images/63 division unassignment.png" alt="The battle plan bar. The division unassignment button is highlighted.">
+            <figcaption>Unassigned divisions will have a red exclamation mark on their division symbol!</figcaption>
+        </figure>
+
+        <p>
+            Back to our original frontline. There's not much use having two frontlines on the exact same border, so let's <strong>delete</strong> one of them. Deleting battle plans 
+            can be done by either <strong>selecting the delete button</strong> or <strong>pressing the delete key</strong>, and then <strong>left clicking</strong> the battle plan. <br>
+            All battle plans of an army can be deleted by <strong>right clicking the delete button</strong> (with a confirmation).
+        </p>
+
+        <figure>
+            <img src="images/64 battle plan deletion.png" alt="The battle plan bar. The battle plan deletion button is highlighted.">
+        </figure>
+
+        <p>
+            To wrap up battle plan editing, sometimes you want to <strong>modify an existing battle plan</strong> instead of having to delete and redraw it. <br>
+            By either clicking the <strong>edit mode button</strong> or <strong>holding down left alt</strong>, a player can modify existing battle plans by 
+            <strong>moving the endpoints</strong> elsewhere. <br>
+            To move an endpoint, <strong>right click and drag</strong> the <strong>anchor</strong>. Where the mouse travels through 
+            will determine which provinces the new line should or should not cover (this only applies to offensive and fallback lines, not frontlines).
+        </p>
+
+        <figure>
+            <img src="images/65 editing battle plan.png" alt="A frontline is being edited. The battle plan bar's edit mode button and the two anchors of the frontline are highlighted.">
+            <figcaption>Two or more battle plans with the same endpoint will fight for the anchor. Typically, the newer battle plan will be the only selectable anchor until it is moved.</figcaption>
+        </figure>
+
+        <p>
+            Back to battle plans, let's now cover the <strong>offensive line</strong>. <br>
+            The offensive line is an <strong>extension</strong> of a frontline that tells where divisions should advance to. An offensive line <strong>cannot be drawn without a frontline</strong> 
+            and <strong>cannot be drawn inside friendly territory</strong>. <br>
+            To draw an offensive line, <strong>select the offensive line button</strong> and <strong>right click and drag</strong> a line <strong>into enemy territory</strong> 
+            (starting at where you want the starting endpoint of the line to be) where you <strong>want your divisions to end up</strong>.
+        </p>
+
+        <figure>
+            <img src="images/66 drawing offensive line.png" alt="An offensive line being drawn into Mexico.">
+            <figcaption>An offensive line can be as long or short as you want.</figcaption>
+        </figure>
+
+        <p>
+            Note that with an offensive plan, your army will now display an <strong>execution arrow</strong>. Clicking that arrow will <strong>begin the plan</strong> while 
+            clicking the <strong>red stop button</strong> will <strong>pause execution</strong>. <br>
+            Note that an offensive plan cannot be executed during peacetime or if your target is not at war with you.
+        </p>
+
+        <figure>
+            <img src="images/67 plan execution.png" alt="An army with an offensive plan that can be executed.">
+            <figcaption>The game will attempt to calculate how good your plan is, but it's not too accurate. Once you get experienced enough, you can gauge a plan yourself!</figcaption>
+        </figure>
+
+        <p>
+            Lastly, we'll talk about <strong>fallback lines</strong>. <br>
+            Unlike the above two battle plan, a fallback line is a <strong>defensive</strong> battle plan that <strong>cannot be drawn outside of friendly territory</strong>. <br>
+            To draw a fallback line, <strong>select the fallback line button</strong> or <strong>press C</strong> and <strong>right click and drag</strong> a line within your 
+            territory. You can correct mistakes while drawing by <strong>doubling back</strong> on provinces, which will deselect them from the line (given that the line can still 
+            be a solid line after the province's removal).
+        </p>
+
+        <figure>
+            <img src="images/68 drawing fallback line.png" alt="A fallback line being drawn.">
+            <figcaption>A fallback line can be any shape or length you want!</figcaption>
+        </figure>
+
+        <p>
+            And that's all the battle plans we'll be talking about! Take a moment to digest everything you've learnt and maybe take a break! In due time, you'll learn to recognize
+            each battle plan and when to use them. <br>
+            If you're playing along, I recommend making a frontline for each hostile neighbour and one entire army per those frontline (unless the frontline is small). If you're 
+            playing the <em>German Reich</em>, I recommend frontlines on <em>France</em>, <em>Czechoslovakia</em>, <em>Poland</em>, and the <em>Netherlands</em>, while if you're 
+            playing <em>Italy</em>, I recommend frontlines on <em>Ethiopia</em>, <em>France</em>, and <em>Yugoslavia</em>, as well as half an army on each side of your north African 
+            holdings.
+        </p>
+
+        <figure>
+            <img src="images/69 example battle plans.png" alt="Some example battle plans for the USA fighting Mexico.">
+            <figcaption>Eventually, you'll learn about terrain and rivers!</figcaption>
+        </figure>
+
+        <h4 id="1.2.4_-_War_Diplomacy">1.2.4 - War Diplomacy</h4>
+
+        <p>
+            Of course, all the guns and plans in the world is of no use if you never go to war! <br>
+            Unlike other grand strategy games such as <b>Civilization</b>, there is no concept of surprise wars. War can only be declared if <strong>one has a wargoal</strong>
+            (commonly referred to in other games as a <strong>Casus Belli</strong>). <br>
+            A wargoal is typically obtained in two ways, either from <strong>events or national focuses</strong> or from <strong>justifications</strong>.
+        </p>
+
+        <p>
+            First, <strong>right clicking on any country</strong> (either with nothing selected or a province/state selected) will open the <strong>diplomatic screen</strong>
+            with that country (you can also open it for yourself, which can allow you to see some basic information about yourself). <br>
+            Here, you can perform a multitude of different political actions, but we'll only be focusing on the top two, <strong>declare war</strong> and <strong>justify war goal</strong>.
+        </p>
+
+        <figure>
+            <img src="images/70 war diplomacy.png" alt="The diplomatic menu with the Dominion of Canada.">
+            <figcaption>We'll discuss what the rest of these actions do in chapter 2!</figcaption>
+        </figure>
+
+        <p>
+            First, you can declare war on another country at any time <strong>as long as you have a wargoal against them</strong>. If you have a wargoal, an alert icon will appear 
+            that, when <strong>moused over</strong>, will display all your current wargoals, including their type and if or when they will expire.
+        </p>
+
+        <figure>
+            <img src="images/71 available wargoal alert.png" alt="Two topple governments wargoals available for the USA against the UK and Japan.">
+            <figcaption>Focuses can grant you all kinds of cool wargoals for free!</figcaption>
+        </figure>
+
+        <p>
+            In the absence of a wargoal, and depending on your country's <strong>ideologoical alignment</strong>, you may be able to <strong>manually justify</strong> a wargoal. <br>
+            This will cost <strong>political power</strong> and take <strong>a number of days</strong> before the justification completes. The wargoal you get will also have 
+            an expiration date, resulting in a penalty if you don't declare the war.
+        </p>
+
+        <figure>
+            <img src="images/72 justifying.png" alt="The USA justifying on the Dominion of Canada for Southern Ontario.">
+            <figcaption>This justification will cost 48 political power and take 240 days before it completes.</figcaption>
+        </figure>
+
+        <h4 id="1.2.5_-_Basic_Combat">1.2.5 - Basic Combat</h4>
+
+        <p>
+            Now for the final major topic of this section, let's talk about the basics of combat. <br>
+            We've already covered how to issue an attack order back in the section on microing and how to set up offensive plans in the section on armies. Now, we'll talk a bit 
+            about how battles actually work.
+        </p>
+
+        <p>
+            First, let's focus back on one division. This time, we'll be talking about some of the other visible stats and bars. <br>
+            The <strong>green bar</strong> shows the division's <strong>organization</strong>. Organization is reduced by a division's actions, such as <strong>moving, attacking, or defending</strong>. 
+            It is <strong>passively regained over time</strong> when a division is not performing an action. <br>
+            The <strong>orange bar</strong> shows the division's <strong>strength</strong>. Strength represents the health of the unit, which can be reduced by <strong>losses in combat</strong>.
+            A unit with lower strength <strong>fights at lower effectiveness</strong> and a division is <strong>destroyed</strong> if its strength reaches zero. Units are 
+            <strong>automatically reinforced over time</strong> if reinforcements and equipment are <strong>available</strong>. <br>
+            The <strong>yellow bar and emblem</strong> shows a unit's <strong>experience</strong>. It is gained through <strong>combat</strong> and <strong>training</strong> and 
+            lost through <strong>losses</strong>. Units with higher experience <strong>fights more effectively</strong>. 
+        </p>
+
+        <figure>
+            <img src="images/73 division combat stats.png" alt="A single American division. It's organization, strength, and training are highlighted.">
+            <figcaption>Colours never stop being important!</figcaption>
+        </figure>
+
+        <p>
+            If a division from one side of a war attempts to move into a province occupied by a division from the other side, a <strong>battle begins</strong>. <br>
+            Each battle is indicated by a <strong>battle pin</strong> which contains a <strong>colour</strong> (green, yellow, or red) and a <strong>number</strong> (0 to 100). <br>
+            The closer the <strong>number is to 0 or 100</strong>, the closer the <strong>battle is to ending</strong>, in favour of <strong>their side or your side respectively</strong>. <br>
+            A <strong>green battle</strong> indicates the battle is going <strong>well</strong> for you. A <strong>red one</strong> indicates the battle is going <strong>poorly</strong>. 
+            A <strong>yellow battle</strong> is indeterminate. <br>
+            <strong>Mousing over</strong> a battle pin shows the estimate of when the battle will end. <strong>Clicking</strong> a battle pin shows the details about the battle 
+            (we'll explain this pop up in more detail in chapter 2).
+        </p>
+
+        <figure>
+            <img src="images/74 battle.png" alt="A battle between four American divisions and one Canadian division. The Americans are winning.">
+            <figcaption>Green = good, red = bad! High number = good, low number = bad!</figcaption>
+        </figure>
+
+        <p>
+            A battle ends if one side's <strong>units in combat</strong> runs out of <strong>org</strong>. <br>
+            If the <strong>defenders win the battle</strong>, the attackers will end their attack. <br>
+            If the <strong>attackers win the battle</strong>, the defenders will be <strong>dislodged</strong> and forced to <strong>retreat to a nearby province</strong>. <br>
+            <strong>If a defending unit is forced to retreat, but has no friendly provinces to retreat to, the unit is destroyed.</strong> 
+            The tactic of surrounding a unit in order to faciliate this is known as performing an <strong>encirclement</strong>. <br>
+            Units that are encircled <strong>cannot recieve supply and reinforcements</strong>.
+        </p>
+
+        <p>
+            And with that, that's everything I think a beginner should know before jumping into the deep end! With this knowledge, other guides as well as the Hearts of Iron IV 
+            official wiki should be much more accessible, as is the upcoming second chapter of this guide! If you were following along in game, you are free to unpause and 
+            try to get as far as you can. No shame in failure, especially in a game like this! <br>
+            Feel free to try exploring the game yourself now, even if you need to turn down the difficulty of the game. <strong>Good luck on your progression!!</strong>
         </p>
 
     </body>
